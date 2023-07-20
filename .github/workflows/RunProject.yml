@@ -33,8 +33,8 @@ jobs:
 
     - name: Commit and push if changed
       run: |
-        git config --global user.name 'levizepeda-reko'
-        git config --global user.email 'reko.image@gmail.com'
+        git config --global user.name 'lbzepeda'
+        git config --global user.email 'levi.zepeda06@gmail.com'
         git add -A
         timestamp=$(date -u)
         git commit -m "Automated update: ${timestamp}" || exit 0

@@ -36,6 +36,7 @@ jobs:
         git config --global user.name 'lbzepeda'
         git config --global user.email 'levi.zepeda06@gmail.com'
         git add -A
+        git restore --staged script.log
         timestamp=$(date -u)
         git commit -m "Automated update: ${timestamp}" || exit 0
         git pull --rebase

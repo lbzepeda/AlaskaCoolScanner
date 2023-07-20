@@ -1,0 +1,27 @@
+{
+  "name": "nextjs",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "sudo lsof -i :3000 | awk 'NR>1 {print $2}' | xargs -I % sudo kill -9 % && next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^4.21.15",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.7",
+    "google-spreadsheet": "^4.0.2",
+    "next": "13.4.7",
+    "react": "18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "18.2.0",
+    "react-image-pan-zoom-rotate": "^1.6.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-paginate": "^8.2.0",
+    "xlsx": "^0.18.5"
+  }
+}

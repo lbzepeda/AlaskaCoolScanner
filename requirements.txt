@@ -1,0 +1,8 @@
+gspread
+google-auth
+pandas
+openpyxl
+pydrive
+oauth2client
+google-cloud-vision
+Pillow

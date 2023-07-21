@@ -2,12 +2,6 @@ import gspread
 from google.oauth2.service_account import Credentials
 import pandas as pd
 import os
-import logging
-
-# Configuración de logging
-logging.basicConfig(level=logging.DEBUG, handlers=[logging.FileHandler('script.log'), logging.StreamHandler()])
-
-print("Comenzando el script...")
 
 # Configuración de las credenciales de la API de Google
 scope = ['https://spreadsheets.google.com/feeds', 

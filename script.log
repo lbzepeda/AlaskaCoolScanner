@@ -741,3 +741,82 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sheets.googleapi
 DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
 DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ/values/%27Hoja%201%27 HTTP/1.1" 200 None
+INFO:root:Comenzando el script...
+DEBUG:urllib3.util.retry:Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+INFO:googleapiclient.discovery_cache:file_cache is only supported with oauth2client<4.0.0
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=title%3D%27Facturas2%27+and+trashed%3Dfalse&maxResults=1000&alt=json
+INFO:oauth2client.transport:Attempting refresh to obtain initial access_token
+DEBUG:oauth2client.crypt:[b'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjcwYWE0YzBjNTE4YzRkYjc2ZWZhZmU5MjIxMGI4OWFlZTdlMjYxYmYifQ', b'eyJhdWQiOiJodHRwczovL29hdXRoMi5nb29nbGVhcGlzLmNvbS90b2tlbiIsInNjb3BlIjoiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9zcHJlYWRzaGVldHMgaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vYXV0aC9kcml2ZSIsImlhdCI6MTY4OTkwMjQzMCwiZXhwIjoxNjg5OTA2MDMwLCJpc3MiOiJzY2FubmVyQGFsYXNrYWNvb2wuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20ifQ', b'FWBo6kWOBzgg1RJSLa0HX7Z_lOWNA-E78FepyGQWkTBKFNtRsmgQiM2ykpRzmA_EKlHNya-KicAa1pEPR_g2jrqnimg0vXwcRdSlx1FhWNj6QazWzMWP63JTKy23auT4Yk7hb6Z4LU608WjoSS-wX0QtWXC1QwoSWO6OjNatbPVVGtJL4hzibDatsEF5DCYjwI3NkqZlHBG_qPgxTCUIkNVaSgXNIoJIkIGok63oF4vH6oxuLgYn39pTjaxNPpzXrTMv2skNC9J5uYFaMIzSjz7wswAiBbZgisLUClpjr8oQj8mBGBvq2G0m0CjFRAedx_mRLyQ-M9zLbSSMPD0e-Q']
+INFO:oauth2client.client:Refreshing access_token
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sheets.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ/values/%27Hoja%201%27 HTTP/1.1" 200 None
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=title%3D%27ESCANER%27+and+mimeType%3D%27application%2Fvnd.google-apps.folder%27+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271VlzFuKaX-YL03p7fCyq_H66NqypdBUKS%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SY1IrmkgCUH2j7iZqxQIqybFljhgbcUZ%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271S9Nu0iTW_QgaiJEULpn2y132W0fW-CfW%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271eE8mMgWcUzdzO8C8w-4-5t-G9APngG3d%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271T-o8LWcKhan5syqT-js-X9b6yE9uZpyI%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SlBsXm6fY_H0RU4vaHIO-IrEVaQOuola%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SkHhwd8xmdF5_b_g6CIls7Ue6cjpVuGp%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271ScN6CLnYMVAqh9W9POuZZDUhkzVJnrRA%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SbvCucrwoA0XFaVrL461mCzNTnklZHFq%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SZXwnivB9Rr21OAP6kAFAhr_8-zFj2tC%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271SRWZv8FNIwrHQzqzJJesE9Ka0tA4_Bzn%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2711MzXLlQhxIlL0fWpFg8FPOuSwNOwc6TS%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271Hx96p-X3myXWeKLlXC1hzwCvUvLbVYv8%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271J0SCfe59fQjx-d1sU15yvvdpyGCT3GB-%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271I6LRvUu-QzmI7eGrnnONsu5khuXkzvuh%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271I5GH9D4pBPZu4pB0HW5icEDwp96_CcR5%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271I2e2fDI0LSdzK4MOZgSm06VwRUS_VvnW%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271I0q-cBOUsQUa2NhaPMuozNm8xvn1x1i0%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271Hyry4UVhpeVuCCi3GUt2jrS3K3FV4FNZ%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716IwmQTDbbaOjz_7yYBO-Y7Y01LP1xUgJ%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271lVo5j-fPK6tRux214Cxj9kC_iCVvLJAG%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716eno2WBi3M58FbGVcuykNAwc4DvIWO6z%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716c2hpRIaiCTdbCnN-sXTBO0TJKcYUiC2%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716R8j6804RwhQg1U_rNdURKeb-E8ZkMJy%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716QJ8ti1YynFUIFdS31HtQi6is-Js34ni%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716KZ_s-LIRzd2ejpJC6FxIhRE0-q3KIyR%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2716DxlkDMcYv2BDkM7x41JATwpce7TFRIH%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271TETrGA84fcV1uTomeZQnEQPKEvJFFLlH%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271-djjdbM271s0FS83KkBY7osYQZ4ilkvP%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2714Sn5nqyD9BUQJDVL2W3Xp1tLi14aKDgF%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2712Q8V2w81U5dJDZI3fAK5RT_Ea13lKszL%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2710abgX3vhQ4qsf6fSRrmY2flYYFsEBBpe%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271-0UM2rkCixZ8qd4bNQKLd3ZyYvH3-e87%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271EPpqMRXkuBqsYGuB95T9jH-BsvhlHez-%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271Gxb3DuSnJuHkM8mLLXDqg-RbT-ZbXatN%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271GRJY-2XCnj3NRgQeynN-AXkPYY0jZ4P8%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271FDi8oC9brDiCWb9-UK02qpRA-nUOPvGn%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271F6T6cQKComkaYwIqLt-ZeR5M8rJAOlyY%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271Ew-jwCuDrda7aHUN0uKTZmmU_oqlt5h3%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271EduN_sZLBHSu08GzEMutEggC8G0STbaZ%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271BoR-pmW3Cqr8FhlTweuJM-s8lgHQns1M%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271BDQi6szDAEyyoSEibcHDh0OTj9CG3-8_%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%271BDC7aFiPQsM94p-vrVSzNGoF8dwiN-3A%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2719QkBO3bsounjJpIVPwdAzc_0QjYe7q7O%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%27193ZRy5rA7FKoUv_CoPV8xOSbHCPl2zwi%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2717bGkY1gZt33PkQGloQQCNrVDJsqgOo-X%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%27180R0y8dn9sFvfkaEt8S9VmfxND0bmxo0%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%27180C4vcPM9WAYbMm1W7m84AvgUj5cfyU1%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2717uXwpbwu9E-mf1t4xLb3slKzW-0XCfVE%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2717koiCx3nzfwf5VEgg7dyP3Zx06pX9BAL%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:googleapiclient.discovery:URL being requested: GET https://www.googleapis.com/drive/v2/files?q=%2717gF4cttzNtpN9KzxeRwgMrgNlaM1vI4F%27+in+parents+and+trashed%3Dfalse&maxResults=1000&alt=json
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "POST /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ/values/%27Hoja%201%27:clear HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "POST /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ/values/%27Hoja%201%27:append?valueInputOption=RAW&includeValuesInResponse=False HTTP/1.1" 200 None
+INFO:root:Facturas2 ha sido actualizado.
+DEBUG:urllib3.util.retry:Converted retries value: 3 -> Retry(total=3, connect=None, read=None, redirect=None, status=None)
+DEBUG:google.auth.transport.requests:Making request: POST https://oauth2.googleapis.com/token
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): oauth2.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://www.googleapis.com:443 "GET /drive/v3/files?q=mimeType%3D%22application%2Fvnd.google-apps.spreadsheet%22+and+name+%3D+%22Facturas2%22&pageSize=1000&supportsAllDrives=True&includeItemsFromAllDrives=True&fields=kind%2CnextPageToken%2Cfiles%28id%2Cname%2CcreatedTime%2CmodifiedTime%29 HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): sheets.googleapis.com:443
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ?includeGridData=false HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:https://sheets.googleapis.com:443 "GET /v4/spreadsheets/16BxlTOpzmbg6x7Z9fClgXxpPoIyv3XlgSIWGT0PqANQ/values/%27Hoja%201%27 HTTP/1.1" 200 None

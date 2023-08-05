@@ -1,4 +1,3 @@
-import logging
 from pydrive.auth import GoogleAuth
 from pydrive.drive import GoogleDrive
 import gspread
@@ -8,11 +7,6 @@ from google.oauth2 import service_account
 import pandas as pd
 import time
 import os
-
-# Configuración de logging
-logging.basicConfig(level=logging.DEBUG, handlers=[logging.FileHandler('script.log'), logging.StreamHandler()])
-
-logging.info("Comenzando el script...")
 
 # Cargar las credenciales del archivo json
 gauth = GoogleAuth()
@@ -79,7 +73,7 @@ def process_files_in_folder(folder_id, folder_name):
                     description = response.text_annotations[0].description if response.text_annotations else ''
                     analysis_time = round(elapsed_time, 2)
 
-                    logging.info(f"Agregando el archivo {local_file_path} a Facturas2.")
+                    print(f"Agregando el archivo {local_file_path} a Facturas2.")
                     new_row = {
                         'Consecutivo': dataframe['Consecutivo'].max() + 1 if not dataframe.empty else 1,
                         'Carpeta': folder_name,
@@ -127,4 +121,4 @@ updated_data.insert(0, dataframe.columns.tolist())  # reinsert the headers at st
 sheet.clear()
 sheet.append_rows(updated_data)
 
-logging.info("Facturas2 ha sido actualizado.")
+print("Facturas2 ha sido actualizado.")
